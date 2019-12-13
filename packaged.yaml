@@ -32,9 +32,9 @@ Resources:
   S3UploaderFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://jbesw-sar-public-source/eaadf28f63131cfec686fbf384ee09c4
+      CodeUri: s3://jbesw-sar-deployments-useast1/56f0700182d83bdf31c2ce2d76534789
       Handler: app.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       MemorySize: 128
       Environment:
         Variables:
