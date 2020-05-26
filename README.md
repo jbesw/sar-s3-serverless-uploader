@@ -14,6 +14,8 @@ Important: this application uses various AWS services and there are costs associ
 ├── template.yaml               <-- SAM template
 ```
 
+See this [YouTube video walkthrough](https://www.youtube.com/watch?v=mw_-0iCVpUc&list=PLJo-rJlep0EAY0nMNBv0MZ487l1tOFAjh&index=7) of how uploading to S3 works with presigned URLs.
+
 ## Requirements
 
 If using outside of the AWS Serverless Application Repository:
