@@ -1,5 +1,5 @@
 /*
-  Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
   Permission is hereby granted, free of charge, to any person obtaining a copy of this
   software and associated documentation files (the "Software"), to deal in the Software
   without restriction, including without limitation the rights to use, copy, modify,
@@ -15,7 +15,6 @@
 
 'use strict'
 
-const uuidv4 = require('uuid/v4')
 const AWS = require('aws-sdk')
 AWS.config.update({ region: process.env.AWS_REGION || 'us-east-1' })
 const s3 = new AWS.S3()
@@ -28,7 +27,7 @@ exports.handler = async (event) => {
 }
 
 const getUploadURL = async function() {
-  const actionId = uuidv4()
+  const actionId = parseInt(Math.random()*10000000)
   
   const s3Params = {
     Bucket: process.env.UploadBucket,
